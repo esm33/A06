@@ -1,0 +1,50 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+header img { 
+    float: left; 
+}
+
+.shadow {
+    text-shadow: 1px 1px 2px #800000;
+}
+
+header h2 {
+    font-size: 170%;
+    color: #800000;
+    text-indent: 30px;
+}
+
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+    text-indent: 30px;
+}
+
+a { 
+    font-weight: bold; 
+}
+
+a:hover, a:focus {
+    font-style: italic;
+}
+
+:root {
+    --global-color-1: #800000;
+}
+
+main h2 {
+    color: var(--global-color-1); /* to use value #800000 */
+    /*background-color: var(--global-color-1);
+    */ 
+}
+/*
+:root {
+    --global-color-1: #4d0080;
+}
+*/
+
+footer p {
+    text-align: center;
+}
