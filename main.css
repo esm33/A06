@@ -1,13 +1,15 @@
-body {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: small;
-}
-header img { 
-    float: left; 
+:root {
+    --global-color-1: #800000;
 }
 
-.shadow {
-    text-shadow: 1px 1px 2px #800000;
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin-left: 10px;
+}
+
+a:hover, a:focus {
+    font-style: italic;
 }
 
 header h2 {
@@ -22,23 +24,53 @@ header h3 {
     text-indent: 30px;
 }
 
+header img { 
+    float: left; 
+}
+
+.shadow {
+    text-shadow: 2px 2px 2px #800000;
+}
+
 a { 
     font-weight: bold; 
 }
 
-a:hover, a:focus {
-    font-style: italic;
+main {
+	clear: left;
 }
-
-:root {
-    --global-color-1: #800000;
+main h1 {
+	font-size: 150%;
+	padding: .3em 0;
 }
-
 main h2 {
-    color: var(--global-color-1); /* to use value #800000 */
+	color: var(--global-color-1); /* to use value #800000 */
     /*background-color: var(--global-color-1);
     */ 
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
 }
+main h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+main img {
+	padding-bottom: 1em;
+}
+main p {
+	padding-bottom: .5em;
+}
+main blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+main ul {
+	padding: 0 0 .25em 1.25em;
+}
+main li {
+	padding-bottom: .35em;
+}
+
 /*
 :root {
     --global-color-1: #4d0080;
@@ -47,4 +79,5 @@ main h2 {
 
 footer p {
     text-align: center;
+    padding: 1em 0;
 }
